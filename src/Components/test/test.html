@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="referrer" content="unsafe-url">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleget()">GET</button>
+    <button onclick="handlepost()">POST</button>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/1.3.4/axios.min.js"></script>
+<script>
+    function handleget(){
+    // let xhr = new XMLHttpRequest()
+    // xhr.open('get","https://cloud.alientek.com/api/orgs/7bcdc8c5292040998529d4e86cac9d7f')
+    // // xhr.responseType = "json";
+    // xhr.send()
+        // axios.get("https://cloud.alientek.com/api/orgs/7bcdc8c5292040998529d4e86cac9d7f")
+        
+        axios({
+            "Access-Control-Allow-Origin":"*",
+            method:'get',
+            url:'https://mqtts.heclouds.com:1883/devices/esp32',
+            Authorization:"version=2018-10-31&res=products%2F584416%2Fdevices%2Fesp32&et=1700000000&method=md5&sign=5lU24Y5nC22O1VhnQjLCZQ%3D%3D"
+        })
+        .then(res=>{
+            // console.log(res.data);
+            this.setState({data:data});
+        })
+    }
+    function handlepost(){
+        axios.post("")
+        // axios({
+        //     method:'get',
+        //     url:'http://localhost:8081/list',
+        // })
+        .then(res=>{
+            console.log(res.data);
+        })
+    }
+</script>
+</html>

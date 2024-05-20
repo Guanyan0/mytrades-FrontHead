@@ -1,0 +1,400 @@
+.ant-tabs-content {
+  height: 100%;
+  overflow: hidden;
+}
+/* 预览pdf文件时需要设置，注意是tabs-tabpane不是tabpanel  */
+.ant-tabs-content .ant-tabs-tabpane {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ant-tree-node-selected{
+   background-color: yellow !important; 
+}
+/*  */
+  
+/*antd-table文字间隙设置，不能设置行高 **/
+.ant-table-tbody >tr >td {
+  padding: 0px 4px 0px 4px !important; 
+  font-family: 'times new roman' !important;
+}
+
+
+.ant-table-tbody td{
+  border-left-width: 0px !important;
+  border-right-width: 1px !important; 
+}
+
+.ant-table-thead >tr >td{
+  border-width: 0 !important;
+  border-bottom: 1px solid #95B8E7 !important;
+  background: #efefef  !important;  
+}
+
+/* table表头样式，标题居中，修改背景色  #FFE4B5   #E0ECFF  */
+.ant-table-thead >tr >th{
+  background: #efefef  !important;  
+  border-bottom: 1px solid #95B8E7 !important;
+  padding: 3px 4px 3px 4px !important;
+  font-family: '楷体';
+  text-align: center !important;
+}
+
+/*去掉table中双滚动条*/
+.ant-table-sticky-scroll{
+   display: none !important;
+}
+
+.labelStyle {
+  font-family: '楷体';
+}
+
+.headerStyle {
+  font-family: '楷体';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.rownumberStyle { /*table中行序号的字体及其大小 */
+  font-family: 'times new roman';
+  font-size: 13px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.paginationStyle { /* 分页栏的字体及其大小 */
+  font-family: 'times new roman';  
+}
+
+table{
+  border-collapse: collapse;
+}
+
+/*表格线条颜色设置，单线和行高度*/
+table tr td {   
+  height: 34px;
+  border: 1px solid #95B8E7; 
+}
+  
+.tabs {
+  list-style-type: none;
+  height: 32px;
+  line-height:32px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 8px;
+  width: 50000px;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+.tabpanel {
+  float: left;
+  /*display: inline-block;*/
+  margin: 2px 4px 0px 8px;
+  padding: 0;
+  position: relative; 
+  border: 0;
+  width:80px;
+  cursor: pointer;
+}
+
+
+.tabs li a:hover{
+  border-bottom: 1px solid #6bc30d;
+  color:#6bc30d; 
+}
+
+.tabpanel-selected {
+  font-weight: bold;
+  outline: none;
+}
+
+.ellipsis{
+  /* 隐藏溢出 */
+  overflow: hidden;
+  /* 溢出省略 */
+  text-overflow: ellipsis;
+  /* 同一行不换行 */
+  white-space: nowrap; 
+   /* 垂直居中对齐 */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.textdiv{ 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: block;
+}
+
+.textdiv{ 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: block;
+}
+
+.listdiv{ 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  display: block;
+  vertical-align: middle;
+  cursor:pointer;
+}
+
+.container{ 
+  min-height: inherit; 
+  position: relative;
+  height: 500px;
+}
+
+#root, body, html{
+  height: 100%;
+}
+
+.plainbox {
+border: 0px solid #95B8E7;
+font-size: 13px;
+-moz-border-radius: 0px 0px 0px 0px;
+-webkit-border-radius: 0px 0px 0px 0px;
+border-radius: 0px 0px 0px 0px;
+}
+
+.plaintextbox {
+border: 0px solid #95B8E7;
+font-size: 13px;
+-moz-border-radius: 0px 0px 0px 0px;
+-webkit-border-radius: 0px 0px 0px 0px;
+border-radius: 0px 0px 0px 0px;  
+white-space:normal;
+word-break:break-all;
+word-wrap:break-word; 
+padding: 0px 4px 1px 5px; 
+}
+
+.plainnumberbox {
+border: 0px solid #95B8E7;
+font-size: 14px;
+font-family: 'times new roman';
+padding: 1px 5px 0px 2px; 
+}
+
+.plainnumberspinner {
+border: 0px solid #95B8E7;
+font-size: 14px;
+font-family: 'times new roman';
+}
+
+.zmenu{
+position: fixed;
+width: 260px;
+height: 50px;
+/*设置背景颜色为黑色*/
+background-color: black;
+top: 94px;
+right: 40px;
+/*设置背景的透明度,如果是1的话,那么就把下面的字体全部挡住了*/
+opacity: 0.7;
+}
+.zmenu img{	cursor: pointer; }
+.zoomimgvbar{
+position: absolute;
+width: 50px;
+height: 156px;
+background-color: black;
+bottom: 30px;
+right: 40px;
+opacity: 0.7;
+}
+.zoomimgvbar img{
+cursor: pointer;
+}
+.tab-inner{
+display:inline-block;
+line-height:12px;
+padding-top:5px;
+}
+.tab-inner img{
+border:0;
+}
+
+.rowbutton-c1{
+color: white;
+border-radius: 4px;
+font-size:12px;
+padding:2px 4px 2px 4px;
+background: -webkit-linear-gradient(top,#fece34,#d8a605);
+background: -moz-linear-gradient(top,#fece34,#d8a605);
+background: linear-gradient(top,#fece34,#d8a605);
+border:1px solid #e68900;
+background: #ffab2e;	
+}
+
+.rowbutton-c1:hover,.c7>.panel-header{
+color: #fff;
+}
+
+.button-edit{
+color: white;
+border-radius: 4px;
+font-size:12px;
+padding:1px 4px 3px 4px;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+border-width:0px;
+background: rgb(66, 184, 221); 
+}
+
+.button-delete{
+color: white;
+border-radius: 4px;
+font-size:12px;
+padding:1px 4px 3px 4px;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+border-width:0px;
+background: rgb(223, 117, 20); /* this is an orange */
+}
+
+
+
+.winIcon{	background-image:url(../images/win1.ico) !important;}
+.windowIcon{      background-image:url(../images/win2.ico)!important; }
+.panelIcon{	background-image:url(../images/win3.ico) !important;}
+.titleIcon{	background-image:url(../images/win4.ico) !important;}
+.tabIcon{      background-image:url(../images/win5.ico)!important; }
+.win1Icon{      background-image:url(../images/win9.ico)!important; }
+.win2Icon{      background-image:url(../images/win14.ico)!important; }
+.formIcon{	background-image:url(../images/winform.png) !important;}
+.windowsearchIcon{      background-image:url(../images/window_search.png)!important; }
+.windowfindIcon{      background-image:url(../images/window_search.png)!important; }
+
+.loginIcon{	background-image:url(../images/login.png) !important;}
+.chooseIcon{ background-image:url(../images/return.png) !important; }
+.lockIcon { background-image: url(../images/lock.png) !important; }
+.keyIcon { background-image: url(../images/key.png) !important; }
+.reloginIcon{ background-image: url(../images/relogin.png) !important; }
+
+.cancelIcon {background-image: url(../images/cancel.png) !important;}
+.stopIcon { background-image: url(../images/stop.png) !important;}
+.closeIcon{ background-image:url(../images/closeall.png) !important;}
+.exitIcon{ 	background-image:url(../images/exit.png) !important;}
+.quitIcon{ 	background-image:url(../images/quit.png) !important;}
+.okIcon{ background-image:url(../images/buttonok.png) !important;}
+.confirmIcon{ 	background-image:url(../images/confirm.png) !important;}
+.playIcon{ 	background-image:url(../images/play.png) !important;}
+
+
+.icon{display:none  !important}
+.bulletIcon{	background-image: url(../images/bullet.png) !important;}
+.actionIcon{	background-image: url(../images/action.png) !important;}
+
+.connectIcon{	background-image: url(../images/connect.png) !important;}
+.addIcon {	background-image: url( ../images/addnew.png ) !important;}
+.addsubIcon {	background-image: url( ../images/add.png ) !important;}
+.appendIcon {	background-image: url( ../images/append.png ) !important;}
+.insertIcon {	background-image: url( ../images/insert.png ) !important;}
+.insertrowIcon {	background-image: url( ../images/table_row_insert.png ) !important;}
+.rowaddIcon{	background-image:url(../images/table_add.png)!important; }
+.rowinsertIcon{	background-image:url(../images/table_row_insert.png)!important; }
+.rowdeleteIcon{	background-image:url(../images/table_row_delete.png)!important; }
+.roweditIcon{	background-image:url(../images/table_edit.png)!important; }
+.rowsaveIcon{	background-image:url(../images/table_save.png)!important; }
+
+.updateIcon {	background-image: url( ../images/edit.gif ) !important;	background-repeat: no-repeat;}
+.editIcon {	background-image: url( ../images/edit.png ) !important;	background-repeat: no-repeat;}
+.deletefileIcon {	background-image: url( ../images/deletefile.png) !important;}
+.deletetableIcon {	background-image: url( ../images/delete_table.png) !important;}
+.deleteIcon {	background-image: url( ../images/delete.png) !important;}
+.eraseIcon {	background-image: url( ../images/erase.png) !important;}
+.removeIcon {	background-image: url( ../images/remove.png) !important;}
+.invalidIcon {	background-image: url( ../images/delete_note.png) !important;}
+.convertIcon {	background-image: url( ../images/convert.png) !important;}
+.reverseIcon {	background-image: url( ../images/convert.png) !important;}
+.searchIcon {	background-image: url( ../images/search.png) !important;}
+.locateIcon {	background-image: url( ../images/locate.png) !important;}
+.filterIcon {	background-image: url( ../images/filter.png) !important;}
+.refreshIcon {	background-image: url( ../images/refresh.gif) !important;}
+.sumIcon {	background-image: url( ../images/sum.png) !important;}
+.readIcon {	background-image: url( ../images/read.png) !important;}
+
+
+.saveIcon{ 	background-image:url(../images/save.png) !important;}
+.submitIcon{ 	background-image:url(../images/submit.png) !important;}
+.exitIcon{ 	background-image:url(../images/exit.png) !important;}
+.menuIcon{ 	background-image:url(../images/menu.png) !important;}
+.noteIcon {	background-image: url( ../images/note.png) !important;}
+.keyIcon {	background-image: url( ../images/key.png) !important;}
+.keylockIcon {	background-image: url( ../images/key_lock.png) !important;}
+.taskIcon {	background-image: url( ../images/task_document.png) !important;}
+.calculatorIcon{ 	background-image:url(../images/calculator.png) !important;}
+.calculationIcon{ 	background-image:url(../images/calculation.png) !important;}
+.accountIcon{ 	background-image:url(../images/account.png) !important;}
+.helpIcon{ 	background-image:url(../images/helpme.gif) !important;}
+.copyIcon{ 	background-image:url(../images/copy.png) !important;}
+.pasteIcon{ 	background-image:url(../images/paste.png) !important;}
+.pluginIcon{ 	background-image:url(../images/plugin.gif) !important;}
+.addviewIcon{ 	background-image:url(../images/addView.gif) !important;}
+
+.returnIcon{ 	background-image:url(../images/return.png) !important;}
+
+.printerIcon {	background-image:url(../images/printer.png) !important;}
+.homeIcon{	background-image:url(../images/home.png)!important; }
+.resetIcon{	background-image:url(../images/reset.png)!important; }
+.collapseIcon{	background-image:url(../images/collapse.png)!important; }
+.expandIcon{	background-image:url(../images/expand.png)!important; }
+.runIcon{	background-image:url(../images/run.png)!important; }
+.rotateIcon{	background-image:url(../images/rotate.png)!important; }
+.rotateimgIcon{	background-image:url(../images/rotate_img.png)!important; }
+.dropdownIcon{	background-image:url(../images/arrowdown.gif)!important; }
+.moveupIcon{	background-image:url(../images/arrow_up.png)!important; }
+.movedownIcon{	background-image:url(../images/arrow_down.png)!important; }
+.zoominIcon{	background-image:url(../images/zoom_in.png)!important; }
+
+.arrowrightIcon{	background-image:url(../images/arrowright.png)!important; }
+.arrowleftIcon{	background-image:url(../images/arrowleft.png)!important; }
+.arrowbackIcon{	background-image:url(../images/arrowback.png)!important; }
+.arrowforwardIcon{	background-image:url(../images/arrowforward.png)!important; }
+.arrowupIcon{	background-image:url(../images/arrowup.png)!important; }
+.arrowdownIcon{	background-image:url(../images/arrowdown.png)!important; }
+.arrowexitIcon{	background-image:url(../images/arrowexit.png)!important; }
+
+.cartIcon{	background-image:url(../images/cart.png)!important; }
+.textIcon{	background-image:url(../images/text.png)!important; }
+.setIcon{	background-image:url(../images/set.png)!important; }
+.databaseIcon{	background-image:url(../images/database.png)!important; }
+.treenodeIcon{	background-image:url(../images/node.png)!important; }
+.nodeIcon{	background-image:url(../images/item1.ico)!important; }
+.tableeditIcon{	background-image:url(../images/tableedit.png)!important; }
+.tableIcon{	background-image:url(../images/table.png)!important; }
+.editdataIcon{	background-image:url(../images/editdata.png)!important; }
+.selectIcon{ background-image:url(../images/select.png)!important; }
+.viewIcon{ background-image:url(../images/view.png)!important; }
+.rewindIcon{	background-image:url(../images/rewind.png)!important; }
+.forwardIcon{	background-image:url(../images/fastforward.png)!important; }
+.searchaddIcon{	background-image:url(../images/searchadd.png)!important; }
+
+.pagefirstIcon{	background-image:url(../images/page-first.gif)!important; }
+.pagelastIcon{	background-image:url(../images/page-last.gif)!important; }
+.pagenextIcon{	background-image:url(../images/page-next.gif)!important; }
+.pageprevIcon{	background-image:url(../images/page-prev.gif)!important; }
+.pagepriorIcon{	background-image:url(../images/page-prev.gif)!important; }
+.uploadIcon{    background-image:url(../images/upload.png)!important; }
+.downloadIcon{	background-image:url(../images/download.png)!important; }
+.downfileIcon{	background-image:url(../images/downfile.png)!important; }
+.leafnode{      background-image:url(../images/leafnode.gif)!important; }
+.leafnodeIcon{      background-image:url(../images/leafnode.gif)!important; }
+.sortIcon{      background-image:url(../images/sort.gif)!important; }
+.sortascIcon{      background-image:url(../images/sort_asc.gif)!important; }
+.sortdescIcon{      background-image:url(../images/sort_desc.gif)!important; }
+.folderopenIcon{      background-image:url(../images/folder-open.gif)!important; }
+.gridIcon{      background-image:url(../images/grid.png)!important; }
+.treeIcon{      background-image:url(../images/tree.gif)!important; }
+.chncheckedIcon{      background-image:url(../images/chnchecked.png)!important; }
+.wordIcon{      background-image:url(../images/word.gif)!important; }
+.excelIcon{      background-image:url(../images/excel.gif)!important; }
+.pdfIcon{      background-image:url(../images/pdf.gif)!important; }
+.mailIcon{      background-image:url(../images/mail.png)!important; }
+.importIcon{      background-image:url(../images/import.png)!important; }
+.exportIcon{      background-image:url(../images/export.png)!important; }

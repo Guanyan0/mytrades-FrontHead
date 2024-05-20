@@ -1,0 +1,46 @@
+.ul {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  padding: 0;
+  cursor:pointer;  
+}
+
+.li {
+  list-style: none;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: calc(100% / 3);
+  background: #ccc;
+  color: rgb(238, 0, 255);
+  cursor:pointer;
+}
+
+.li:active {
+  background: indianred;
+  color: antiquewhite;
+  
+}
+
+.li_active{
+   list-style: none;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   width: calc(100% / 3);
+   background: indianred;
+   color: antiquewhite;
+   cursor: pointer;
+  }
+
+.tags>div{
+  /*width: 800px;*/
+  height: 480px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.tags>div.active{
+  display: block;
+}
